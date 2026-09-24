@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./index.css";
+import "./studentportal.css";
 
 function App() {
   const [showDetails, setShowDetails] = useState(false);
