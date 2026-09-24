@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./all.css";
+import "./index.css";
 
 function App() {
   const [showDetails, setShowDetails] = useState(false);
