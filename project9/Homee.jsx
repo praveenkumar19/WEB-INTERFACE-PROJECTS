@@ -1,11 +1,12 @@
-function Homee() {
+function Homee({ photo, signature }) {
   return (
     <div className="page">
       <div className="card">
 
+        {/* Profile Header */}
         <div className="profile-header">
 
-          {/* Student Details - Left */}
+          {/* Student Details */}
           <div className="profile-info">
 
             <p className="college-title">
@@ -39,33 +40,34 @@ function Homee() {
 
           </div>
 
-          {/* Student Image - Right */}
+          {/* Student Photo & Signature */}
           <div className="profile-photo">
 
-  <img
-    src="/profile.png"
-    alt="Praveen Kumar"
-    className="profile-image"
-  />
+            <img
+              src={photo}
+              alt="Praveen Kumar"
+              className="profile-image"
+            />
 
-  <p className="student-label">
-    Student
-  </p>
+            <p className="student-label">
+              Student
+            </p>
 
-  <img
-    src="/signature.png"
-    alt="Signature"
-    className="signature-image"
-  />
+            <img
+              src={signature}
+              alt="Signature"
+              className="signature-image"
+            />
 
-  <p className="signature-label">
-    Signature
-  </p>
+            <p className="signature-label">
+              Signature
+            </p>
 
-</div>
+          </div>
 
         </div>
 
+        {/* Welcome Section */}
         <div className="welcome-section">
 
           <h2>Welcome</h2>

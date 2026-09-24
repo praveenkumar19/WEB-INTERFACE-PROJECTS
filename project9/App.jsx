@@ -6,7 +6,11 @@ import Semester2 from "./Semester2";
 import Semester3 from "./Semester3";
 import Overall from "./Overall";
 
+import "./index.css";
 import "./App.css";
+
+import photo from "./profile.png";
+import signature from "./signature.png";
 
 function App() {
   return (
@@ -26,7 +30,15 @@ function App() {
 
       <Routes>
 
-        <Route path="/" element={<Home />} />
+        <Route
+          path="/"
+          element={
+            <Home
+              photo={photo}
+              signature={signature}
+            />
+          }
+        />
 
         <Route
           path="/semester1"
