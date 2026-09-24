@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+  color: #111827;
+}
+
+.home {
+  min-height: 100vh;
+  padding: 60px 8%;
+}
+
+.hero {
+  max-width: 900px;
+  margin: 0 auto 50px;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  color: #6366f1;
+  margin-bottom: 15px;
+}
+
+.hero h1 {
+  font-size: clamp(38px, 6vw, 70px);
+  margin-bottom: 15px;
+}
+
+.description {
+  color: #6b7280;
+  font-size: 18px;
+}
+
+.projects {
+  max-width: 1000px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.project-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 25px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  text-decoration: none;
+  color: #111827;
+  transition: 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  border-color: #6366f1;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+.number {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  background: #111827;
+  color: white;
+  font-weight: bold;
+}
+
+.project-card h2 {
+  font-size: 21px;
+  margin-bottom: 6px;
+}
+
+.project-card p {
+  color: #6b7280;
+}
+
+.arrow {
+  margin-left: auto;
+  font-size: 28px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 60px;
+  color: #6b7280;
+}
+
+@media (max-width: 700px) {
+  .home {
+    padding: 40px 5%;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
+  }
+}
