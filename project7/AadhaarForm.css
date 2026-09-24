@@ -1,0 +1,175 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f1f3f6;
+  color: #222222;
+}
+
+/* MAIN CONTAINER */
+
+.aadhaar-container {
+  width: 600px;
+  max-width: 95%;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  color: #222222;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* HEADING */
+
+.aadhaar-container h1 {
+  color: #111111;
+  text-align: center;
+  font-size: 30px;
+  margin: 0 0 10px 0;
+}
+
+/* NOTE */
+
+.note {
+  color: #555555;
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+
+/* STAR */
+
+.required {
+  color: red;
+}
+
+/* LABEL */
+
+.aadhaar-container label {
+  display: block;
+  color: #222222;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 18px;
+  margin-bottom: 7px;
+}
+
+/* INPUT */
+
+.aadhaar-container input {
+  width: 100%;
+  padding: 12px;
+  color: #222222;
+  background-color: #ffffff;
+  border: 1px solid #999999;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+/* PLACEHOLDER */
+
+.aadhaar-container input::placeholder {
+  color: #777777;
+}
+
+/* INPUT FOCUS */
+
+.aadhaar-container input:focus {
+  outline: none;
+  border: 2px solid #222222;
+}
+
+/* ERROR */
+
+.error {
+  color: red;
+  font-size: 13px;
+  margin: 5px 0;
+  min-height: 18px;
+}
+
+/* INFORMATION */
+
+.password-info,
+.photo-info {
+  color: #555555;
+  font-size: 13px;
+  margin: 6px 0;
+}
+
+/* BUTTONS */
+
+.buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.buttons button {
+  width: 50%;
+  padding: 13px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* SUBMIT */
+
+.submit-btn {
+  background-color: #222222;
+  color: #ffffff;
+}
+
+.submit-btn:hover {
+  background-color: #444444;
+}
+
+/* CLEAR */
+
+.clear-btn {
+  background-color: #dddddd;
+  color: #222222;
+}
+
+.clear-btn:hover {
+  background-color: #bbbbbb;
+}
+
+/* SUCCESS */
+
+.success {
+  color: green;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+  .aadhaar-container {
+    width: 95%;
+    padding: 20px;
+    margin: 20px auto;
+  }
+
+  .aadhaar-container h1 {
+    font-size: 25px;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+
+  .buttons button {
+    width: 100%;
+  }
+}

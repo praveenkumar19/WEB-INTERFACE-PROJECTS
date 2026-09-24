@@ -1,0 +1,248 @@
+body {
+    text-align: center;
+    margin: 0;
+    padding-top: 80px;
+    font-family: Arial, sans-serif;
+    background-color: #f2f4f8;
+}
+
+/* Main Container */
+.container {
+    background-color: white;
+    border-radius: 25px;
+    padding: 40px 30px;
+    width: 400px;
+    max-width: 90%;
+    margin: 0 auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Heading */
+h2,h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #13106d;
+}
+
+h3 {
+    font-size: 24px;
+    color: #333;
+    margin-top: 25px;
+}
+
+/* Buttons */
+button {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 22px;
+    margin: 6px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: #13106d;
+    color: white;
+    transition: 0.3s ease;
+}
+
+/* Button Hover */
+button:hover {
+    background-color: rgb(232, 221, 13);
+    color: black;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Fruit List */
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+li {
+    background-color: #f1f3f6;
+    margin: 8px auto;
+    padding: 12px;
+    width: 250px;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+p{
+    font-size: 20px;
+    color: #1d7bb6;
+}
+.containere {
+    background-color: white;
+    border-radius: 20px;
+    padding: 40px 30px;
+    width: 400px;
+    max-width: 90%;
+    margin: 0 auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.container {
+    width: 400px;
+    margin: 50px auto;
+    padding: 40px;
+    text-align: center;
+    border-radius: 15px;
+    transition: 0.3s ease;
+}
+
+.light-container {
+    width: 100%;
+    min-height: 100vh;
+
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    transition: background-color 0.5s ease;
+}
+
+.dark-container {
+    width: 100%;
+    min-height: 100vh;
+
+    background-color: #121212;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    transition: background-color 0.5s ease;
+}
+
+button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.containerss{
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 8px;
+        width: 300px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin: 20px auto;
+    }
+/* Menu Button */
+.menu-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+
+  width: 50px;
+  height: 50px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: #111827;
+  color: white;
+
+  font-size: 25px;
+  cursor: pointer;
+
+  z-index: 1001;
+}
+
+.menu-btn:hover {
+  background: #374151;
+}
+
+/* Side Menu */
+.side-menu {
+  position: fixed;
+
+  top: 0;
+  left: -280px;
+
+  width: 280px;
+  height: 100vh;
+
+  background: white;
+
+  padding: 30px 20px;
+
+  box-sizing: border-box;
+
+  transition: left 0.3s ease;
+
+  z-index: 1002;
+
+  box-shadow: 5px 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* When menu is open */
+.side-menu.open {
+  left: 0;
+}
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+
+  top: 20px;
+  right: 20px;
+
+  border: none;
+  background: none;
+
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Menu Heading */
+.side-menu h2 {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+/* Navigation Links */
+.side-menu a {
+  display: block;
+
+  padding: 15px 10px;
+
+  margin: 5px 0;
+
+  text-decoration: none;
+
+  color: #111827;
+
+  font-size: 18px;
+
+  border-radius: 8px;
+
+  transition: 0.2s;
+}
+
+.side-menu a:hover {
+  background: #f3f4f6;
+  padding-left: 18px;
+}
+
+/* Background Overlay */
+.overlay {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100vh;
+
+  background: rgba(0, 0, 0, 0.5);
+
+  z-index: 1000;
+}

@@ -1,0 +1,162 @@
+
+/* Main container */
+.container {
+  width: 600px;
+  margin: 30px auto;
+  font-family: Arial, sans-serif;
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+
+/* Student list */
+.student-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+
+/* Each student card */
+.student {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+
+  border: 1px solid #ddd;
+  border-radius: 10px;
+
+  background-color: #f8f8f8;
+
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Student name */
+.student h3 {
+  margin: 0 0 10px 0;
+}
+
+
+/* Status */
+.student p {
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+
+/* Attendance Buttons */
+.student button {
+  padding: 9px 20px;
+  margin-right: 10px;
+
+  border: none;
+  border-radius: 7px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+
+/* Present Button - Green */
+.student button:first-of-type {
+  background-color: #16a34a;
+  color: white;
+}
+
+.student button:first-of-type:hover {
+  background-color: #15803d;
+  transform: translateY(-2px);
+}
+
+.student button:first-of-type:active {
+  transform: scale(0.96);
+}
+
+
+/* Absent Button - Red */
+.student button:last-of-type {
+  background-color: #dc2626;
+  color: white;
+}
+
+.student button:last-of-type:hover {
+  background-color: #b91c1c;
+  transform: translateY(-2px);
+}
+
+.student button:last-of-type:active {
+  transform: scale(0.96);
+}
+
+
+
+
+
+/* Attendance Summary */
+.result {
+  margin-top: 35px;
+  padding: 25px;
+
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Summary Heading */
+.result h2 {
+  margin: 0 0 20px;
+  text-align: center;
+
+  font-size: 24px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+/* Summary paragraphs */
+.result p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 12px 0;
+  padding: 14px 18px;
+
+  background: #f8fafc;
+  border-radius: 8px;
+
+  font-size: 16px;
+  font-weight: 600;
+  color: #374151;
+}
+
+/* Present */
+.result p:nth-child(3) {
+  background: #ecfdf5;
+  color: #047857;
+  border-left: 5px solid #10b981;
+}
+
+/* Absent */
+.result p:nth-child(4) {
+  background: #fef2f2;
+  color: #dc2626;
+  border-left: 5px solid #ef4444;
+}
+
+/* Hover effect */
+.result p:hover {
+  transform: translateX(4px);
+  transition: 0.2s ease;
+}
+
+
